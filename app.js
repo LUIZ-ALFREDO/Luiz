@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var usuario = require('./routes/usuario');
 var perfil = require('./routes/perfil');
+var quadrado = require('./routes/quadrado');
 
 var aluno = require('./routes/aluno');   // Criado
 
@@ -57,7 +58,7 @@ app.use('/', routes);
 app.use('/usuario', usuario);
 app.use('/perfil', perfil);
 app.use('/aluno', aluno);
-
+app.use('/quadrado', quadrado);
 
 
 //Configuração de páginas não encontradas
