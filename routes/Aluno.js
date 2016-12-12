@@ -3,7 +3,7 @@ var router = express.Router();
 
 var Aluno = require('../models/Aluno.js');
 
-/* GET /aluno Listagem de perfis. */
+/* GET /aluno Listagem de alunos. */
 router.get('/', function(req, res, next) {
   Aluno.find(function (err, aluno) {
     if (err) return next(err);
