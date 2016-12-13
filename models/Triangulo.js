@@ -4,8 +4,8 @@ var TrianguloSchema = new mongoose.Schema({
   nome: String,
   base: Number,
   altura: Number,
-  peso: number,
-  cor: string
+  peso: Number,
+  cor: String
 });
 
 module.exports = mongoose.model('Triangulo', TrianguloSchema);
