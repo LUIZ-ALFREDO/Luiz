@@ -7,7 +7,6 @@ var PfSchema = new mongoose.Schema({
   peso: Number,
   cor: String,
   nasc: {created:{type: Date, default: Date.now}}
-//  Nasc: {created:{type: Date, default: Date.now}}
 });
 
 module.exports = mongoose.model('Pf', PfSchema);
