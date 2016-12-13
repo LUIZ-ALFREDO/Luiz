@@ -9,6 +9,7 @@ var usuario = require('./routes/usuario');
 var perfil = require('./routes/perfil');
 var quadrado = require('./routes/quadrado');
 var triangulo = require('./routes/triangulo');
+var pf = require('./routes/pf');
 
 var aluno = require('./routes/aluno');   // Criado
 
@@ -61,6 +62,7 @@ app.use('/perfil', perfil);
 app.use('/aluno', aluno);
 app.use('/quadrado', quadrado);
 app.use('/triangulo', triangulo);
+app.use('/pf', pf);
 
 
 //Configuração de páginas não encontradas
