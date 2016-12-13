@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var Quadrado = require('../models/Quadrado.js');
+var Quadrado = require('../models/Triangulo.js');
 
 /* GET /quadrado Listagem de usuários. */
 router.get('/', function(req, res, next) {
