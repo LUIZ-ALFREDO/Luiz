@@ -2,43 +2,43 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var Quadrado = require('../models/Triangulo.js');
+var Triangulo = require('../models/Triangulo.js');
 
-/* GET /quadrado Listagem de usuários. */
+/* GET /Triangulo Listagem de usuários. */
 router.get('/', function(req, res, next) {
-  Quadrado.find(function (err, quadrado) {
+  Triangulo.find(function (err, triangulo) {
     if (err) return next(err);
-    res.json(quadrado);
+    res.json(triangulo);
   });
 });
 
-/* POST /quadrado Cadastro de usuário */
+/* POST /triangulo Cadastro de usuário */
 router.post('/', function(req, res, next) {
-  Quadrado.create(req.body, function (err, post) {
+  Triangulo.create(req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* GET /quadrado/id  Lista filtrada por um usuário*/
+/* GET /triangulo/id  Lista filtrada por um usuário*/
 router.get('/:id', function(req, res, next) {
-  Quadrado.findById(req.params.id, function (err, post) {
+  Triangulo.findById(req.params.id, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* PUT /quadrado/:id Salva a edição de usuário */
+/* PUT /triangulo/:id Salva a edição de usuário */
 router.put('/:id', function(req, res, next) {
-  Quadrado.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+  Triangulo.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* DELETE /quadrado/:id Deletando o usuário a partir do id */
+/* DELETE /triangulo/:id Deletando o usuário a partir do id */
 router.delete('/:id', function(req, res, next) {
-  Quadrado.findByIdAndRemove(req.params.id, req.body, function (err, post) {
+  Triangulo.findByIdAndRemove(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
