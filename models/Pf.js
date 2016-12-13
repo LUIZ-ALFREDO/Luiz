@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var PfSchema = new mongoose.Schema({
   nome: String,
-  Idade: Number,
+  idade: Number,
   altura: Number,
   peso: Number,
   cor: String,
