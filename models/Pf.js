@@ -5,7 +5,7 @@ var PfSchema = new mongoose.Schema({
   idade: Number,
   altura: Number,
   peso: Number,
-  cor: {nome:String},
+  cor: String,
   nasc: Date 
 //   {created:{type: Date, default: Date.now}}
 });
